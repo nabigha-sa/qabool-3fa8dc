@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>بيانات القبول | مسار نابغة</title>
+<meta name="description" content="تعبئة بيانات قبول الطالب في مدارس الساحل الأهلية، مسار نابغة.">
+<meta property="og:title" content="بيانات القبول | مسار نابغة">
+<meta property="og:description" content="مبارك القبول. عبّئوا بيانات الطالب ليبدأ الدوام الأحد 1 نوفمبر بإذن الله.">
+<meta property="og:image" content="https://nabigha-sa.github.io/qabool-3fa8dc/img/og.png">
+<meta name="theme-color" content="#0F3D34">
+<link rel="icon" href="img/nabigha.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="common.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="brand"><img class="sh" src="img/sahel.png" alt="مدارس الساحل الأهلية"><span class="sep"></span><img class="nb" src="img/nabigha.png" alt="نابغة"></div>
+
+  <section class="hero">
+    <div class="eyebrow">بشرى قبول 🌿</div>
+    <h1>مبارك قبول ابنكم ✨</h1>
+    <p>نرجو تعبئة البيانات كما في الهوية، فبها يُفتح ملف الطالب في المدرسة. لكل ابن نموذج مستقل.</p>
+    <div class="steps-mini"><span class="on">١ بيانات القبول</span><span>٢ خيارات الدفع</span><span>٣ مراجعة المدرسة</span></div>
+  </section>
+
+  <form id="f" class="wrap" novalidate>
+    <section class="card">
+      <h2><span class="n">١</span>بيانات ولي الأمر</h2>
+      <div class="field">
+        <label for="father_name">اسم الأب رباعياً<span class="req">*</span></label>
+        <input id="father_name" type="text" autocomplete="name" placeholder="مثال: محمد عبدالله أحمد الزهراني">
+        <span class="err">اكتبوا الاسم رباعياً كما في الهوية.</span>
+      </div>
+      <div class="field">
+        <label for="father_id">رقم هوية الأب<span class="req">*</span></label>
+        <input id="father_id" type="tel" inputmode="numeric" maxlength="10" dir="ltr" placeholder="1XXXXXXXXX">
+        <span class="err">رقم الهوية 10 أرقام، يبدأ بـ1 أو 2.</span>
+      </div>
+      <div class="field">
+        <label for="mobile">رقم الجوال<span class="req">*</span></label>
+        <input id="mobile" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05XXXXXXXX">
+        <span class="err">اكتبوا رقم جوال سعودياً صحيحاً، مثل 05XXXXXXXX.</span>
+      </div>
+      <div class="field">
+        <span class="lbl">الجنسية<span class="req">*</span></span>
+        <div class="choices" role="radiogroup" aria-label="الجنسية">
+          <label class="opt"><input type="radio" name="nat" value="سعودي"><span>سعودي</span></label>
+          <label class="opt"><input type="radio" name="nat" value="other"><span>جنسية أخرى</span></label>
+        </div>
+        <input id="nat_other" type="text" placeholder="اكتبوا الجنسية" hidden>
+        <span class="err">اختاروا الجنسية.</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">٢</span>بيانات الطالب</h2>
+      <div class="field">
+        <label for="son_name">اسم الابن<span class="req">*</span></label>
+        <input id="son_name" type="text" placeholder="الاسم الأول فقط">
+        <span class="err">اكتبوا اسم الابن.</span>
+      </div>
+      <div class="field">
+        <label for="student_id">رقم هوية الطالب<span class="req">*</span></label>
+        <input id="student_id" type="tel" inputmode="numeric" maxlength="10" dir="ltr" placeholder="1XXXXXXXXX">
+        <span class="err">رقم الهوية 10 أرقام، يبدأ بـ1 أو 2.</span>
+      </div>
+      <div class="field">
+        <label for="dob">تاريخ الميلاد (ميلادي)<span class="req">*</span></label>
+        <input id="dob" type="date" min="2012-01-01" max="2021-12-31">
+        <span class="err">اختاروا تاريخ الميلاد.</span>
+      </div>
+      <div class="field">
+        <span class="lbl">الصف<span class="req">*</span></span>
+        <div class="choices grades" role="radiogroup" aria-label="الصف">
+          <label class="opt"><input type="radio" name="grade" value="الأول الابتدائي"><span>الأول</span></label>
+          <label class="opt"><input type="radio" name="grade" value="الثاني الابتدائي"><span>الثاني</span></label>
+          <label class="opt"><input type="radio" name="grade" value="الثالث الابتدائي"><span>الثالث</span></label>
+          <label class="opt"><input type="radio" name="grade" value="الرابع الابتدائي"><span>الرابع</span></label>
+          <label class="opt"><input type="radio" name="grade" value="الخامس الابتدائي"><span>الخامس</span></label>
+          <label class="opt"><input type="radio" name="grade" value="السادس الابتدائي"><span>السادس</span></label>
+        </div>
+        <span class="err">اختاروا الصف.</span>
+      </div>
+    </section>
+
+    <div class="form-err" id="ferr" role="alert"></div>
+    <button class="btn" id="go" type="submit">إرسال البيانات</button>
+  </form>
+
+  <section class="card done" id="done" hidden>
+    <div class="tick" aria-hidden="true">✓</div>
+    <h2>وصلت بياناتكم، جزاكم الله خيراً 🤍</h2>
+    <p>الخطوة التالية: اختيار طريقة الدفع وخطة السداد.</p>
+    <a class="btn gold" href="dafa.html">التالي: خيارات الدفع</a>
+    <button class="btn" type="button" id="again" style="background:transparent;color:var(--green);border:1.5px solid var(--green)">تسجيل ابن آخر</button>
+  </section>
+
+  <div class="note"><b>📌 للعلم</b>
+    <ul><li>يبدأ الدوام بإذن الله يوم الأحد 1 نوفمبر.</li>
+    <li>بعد التعبئة: مراجعة وحدة القبول والتسجيل في المدرسة (أ. أحمد النجار) لاستكمال الإجراءات.</li></ul>
+  </div>
+  <footer>مدارس الساحل الأهلية · مسار نابغة</footer>
+</main>
+
+<script src="common.js"></script>
+<script>
+const f = document.getElementById('f'), $ = id => document.getElementById(id);
+const natOther = $('nat_other');
+f.addEventListener('change', e => {
+  if (e.target.name === 'nat') natOther.hidden = e.target.value !== 'other';
+  if (e.target.type === 'radio') mark(e.target, true);
+});
+f.addEventListener('input', e => { const fl = e.target.closest('.field'); if (fl && fl.classList.contains('bad')) fl.classList.remove('bad'); });
+
+function collect() {
+  const v = id => $(id).value.trim();
+  const words = s => s.split(/\s+/).filter(Boolean).length;
+  const natSel = radioVal(f, 'nat');
+  const d = {
+    father_name: v('father_name').replace(/\s+/g, ' '),
+    father_id: toLatin(v('father_id')),
+    mobile: normMobile(v('mobile')),
+    nationality: natSel === 'other' ? v('nat_other') : natSel,
+    son_name: v('son_name'),
+    student_id: toLatin(v('student_id')),
+    dob: v('dob'),
+    grade: radioVal(f, 'grade')
+  };
+  const ok = [
+    mark($('father_name'), words(d.father_name) >= 3),
+    mark($('father_id'), RX.id.test(d.father_id)),
+    mark($('mobile'), RX.mobile.test(d.mobile)),
+    mark(natOther, !!d.nationality),
+    mark($('son_name'), d.son_name.length >= 2),
+    mark($('student_id'), RX.id.test(d.student_id) && d.student_id !== d.father_id),
+    mark($('dob'), !!d.dob),
+    mark(f.querySelector('[name=grade]'), !!d.grade)
+  ].every(Boolean);
+  return ok ? d : null;
+}
+
+f.addEventListener('submit', async e => {
+  e.preventDefault();
+  const ferr = $('ferr'); ferr.classList.remove('show');
+  const d = collect();
+  if (!d) { const b = f.querySelector('.field.bad'); b && b.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+  const go = $('go'); go.disabled = true; go.textContent = 'جارٍ الإرسال…';
+  try {
+    await send('app', d);
+    store('nabigha_student', { name: d.son_name + ' ' + d.father_name, mobile: d.mobile });
+    f.hidden = true; $('done').hidden = false; $('done').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } catch (err) {
+    ferr.textContent = 'تعذّر الإرسال. تأكدوا من اتصال الإنترنت ثم اضغطوا «إرسال البيانات» مرة أخرى.';
+    ferr.classList.add('show');
+  } finally { go.disabled = false; go.textContent = 'إرسال البيانات'; }
+});
+
+$('again').addEventListener('click', () => {
+  ['son_name', 'student_id', 'dob'].forEach(id => $(id).value = '');
+  f.querySelectorAll('[name=grade]').forEach(r => r.checked = false);
+  $('done').hidden = true; f.hidden = false; $('son_name').focus();
+});
+</script>
+</body>
+</html>
