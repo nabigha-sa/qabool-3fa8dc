@@ -172,7 +172,7 @@ function renderSchedule() {
   MONTHS.forEach((m, i) => {
     if (!custom && !amounts[i]) return;
     html += '<tr><td>' + m + '</td><td>' + (custom
-      ? '<input type="number" inputmode="numeric" min="0" step="50" data-i="' + i + '" value="' + (amounts[i] || '') + '" placeholder="0" aria-label="مبلغ ' + m + '">'
+      ? '<input type="text" inputmode="numeric" dir="ltr" data-i="' + i + '" value="' + (amounts[i] || '') + '" placeholder="0" aria-label="مبلغ ' + m + '">'
       : sar(amounts[i])) + '</td></tr>';
   });
   html += '<tr class="total"><td>المجموع</td><td id="tot">' + sar(DOWN + amounts.reduce((a, b) => a + b, 0)) + '</td></tr>';
@@ -187,7 +187,7 @@ function updateLeft() {
 }
 $('rows').addEventListener('input', e => {
   if (!e.target.dataset.i) return;
-  amounts[+e.target.dataset.i] = Math.max(0, Math.round(+toLatin(e.target.value) || 0));
+  amounts[+e.target.dataset.i] = Math.max(0, Math.round(+toLatin(e.target.value).replace(/[,،\s]/g, "") || 0));
   updateLeft(); $('preset_err').closest('.field').classList.remove('bad');
 });
 
